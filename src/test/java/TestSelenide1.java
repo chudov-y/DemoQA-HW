@@ -35,8 +35,7 @@ public class TestSelenide1 {
         $("#wiki-pages-box").$(withText("Show")).click();
         $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
-        $(".markdown-body").$("#user-content-3-using-junit5-extend-test-class")
-                .closest("h4").sibling(0).shouldHave(text(JUnit5Class));
+        $("#user-content-3-using-junit5-extend-test-class").closest("h4").sibling(0).shouldHave(text(JUnit5Class));
 
     }
 }
